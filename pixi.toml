@@ -1,0 +1,14 @@
+[workspace]
+authors = ["John McLevey <mclevey@mun.ca>"]
+channels = ["conda-forge"]
+name = "maps"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+make = { cmd = "python make_maps.py" }
+
+
+[dependencies]
+osmnx = ">=2.1.0,<3"
+matplotlib = ">=3.11.0,<4"
